@@ -1,9 +1,21 @@
 <resources>
-    <string name="app_name">POI-App</string>
+    <string name="app_name">Points of Interest</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="was">Was</string>
+    <string name="ort">Ort</string>
+
+    <string name="kategorie">Wähle eine Kategorie</string>
+
+    <string-array name="kategorie_arrays">
+        <item>Einkaufen</item>
+        <item>Freizeit</item>
+        <item>Medizinische Versorgung</item>
+
+    </string-array>
+
 </resources>
