@@ -1,5 +1,6 @@
 package com.example.jale.poi_app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,12 +14,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 public class Search extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     //test again
+
+    private Button findbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +55,22 @@ public class Search extends AppCompatActivity
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
 
+        findbutton = findViewById(R.id.finden_button);
+        findbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openresult();
+            }
+        });
+
+
+
+    }
+
+    public void openresult(){
+
+       Intent intent = new Intent (this,result.class);
+       startActivity(intent);
     }
 
     @Override
