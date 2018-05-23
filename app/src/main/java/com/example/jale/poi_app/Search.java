@@ -95,7 +95,11 @@ public class Search extends AppCompatActivity
 
 
         } else if (id == R.id.einstellungen) {
-
+            SettingsFragment fragment = new SettingsFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
