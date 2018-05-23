@@ -53,25 +53,12 @@ public class Search extends AppCompatActivity
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinner.setAdapter(adapter);
-
-        findbutton = findViewById(R.id.finden_button);
-        findbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openresult();
-            }
-        });
+        spinner.setAdapter(adapter);}
 
 
 
-    }
 
-    public void openresult(){
 
-       Intent intent = new Intent (this,result.class);
-       startActivity(intent);
-    }
 
     @Override
     public void onBackPressed() {
