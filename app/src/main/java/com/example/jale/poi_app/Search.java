@@ -1,6 +1,7 @@
 package com.example.jale.poi_app;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -34,7 +35,7 @@ public class Search extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         //Set the fragment initially
-        FavoriteFragment fragment = new FavoriteFragment();
+        SearchFragment fragment = new SearchFragment();
         android.support.v4.app.FragmentTransaction fragmentTransaction =
                 getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, fragment);
@@ -91,6 +92,7 @@ public class Search extends AppCompatActivity
                     getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
             fragmentTransaction.commit();
+
 
         } else if (id == R.id.einstellungen) {
 

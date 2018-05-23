@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.content.Context;
 
@@ -35,8 +36,24 @@ public class SearchFragment extends Fragment {
         // Apply the adapter to the spinner
        spinner.setAdapter(adapter);
 
+
+        Button button= (Button) viewpuffer.findViewById(R.id.finden_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                ResultFragment fragment = new ResultFragment();
+                android.support.v4.app.FragmentTransaction fragmentTransaction =
+                        getActivity().getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, fragment);
+                fragmentTransaction.commit();
+            }
+        });
+
         // Inflate the layout for this fragment
         return viewpuffer;
     }
+
+
+
+
 
 }
