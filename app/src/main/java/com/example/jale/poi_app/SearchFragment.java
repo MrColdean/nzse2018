@@ -47,7 +47,7 @@ public class SearchFragment extends Fragment {
                 fragmentTransaction.commit();
             }
         });
-
+getActivity().setTitle(getString(R.string.suche));
         // Inflate the layout for this fragment
         return viewpuffer;
     }
