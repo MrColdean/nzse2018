@@ -1,4 +1,3 @@
-package com.example.jale.poi_app;
 
 import android.app.Activity;
 import android.app.Service;
@@ -216,7 +215,7 @@ public class RequestService extends Service {
                     Log.i("FILE READER", "!... " + output.getPath());
 
                     //new URL(urlPath + "/" + fileName);
-                    URL url = new URL(urlPath );
+                    java.net.URL url = new URL(urlPath );
                     HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                     urlConnection.setRequestMethod("GET");
                     urlConnection.setDoOutput(true);
