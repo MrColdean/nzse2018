@@ -12,9 +12,6 @@
     <string name="kategorie">Wähle eine Kategorie</string>
 
 
-
-
-
     <string-array name="kategorie_arrays">
         <item>Einkaufen</item>
         <item>Freizeit</item>
@@ -29,5 +26,6 @@
     <string name="einstellungen">Einstellungen</string>
     <string name="ergebnis">Ergebnis</string>
     <string name="favorit">Favoriten</string>
+    <string name="title_activity_result_item">ResultItemActivity</string>
 
 </resources>
