@@ -1,3 +1,4 @@
+package com.example.jale.poi_app;
 
 import android.app.Activity;
 import android.app.Service;
