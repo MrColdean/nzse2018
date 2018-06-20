@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class ResultItemActivity extends AppCompatActivity {
@@ -36,6 +37,8 @@ public class ResultItemActivity extends AppCompatActivity {
     }
 
 
+
+
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
@@ -54,18 +57,26 @@ public class ResultItemActivity extends AppCompatActivity {
 
 
 
+        Button favo;
+        favo = (Button) findViewById(R.id.favobutton);
+        favo.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View arg0) {
+
+            }
+        });
 
 
 
 
 
         Bundle b = getIntent().getExtras();
-        int value = -1; // or other values
+        String value = ""; // or other values
         if(b != null)
-            value = b.getInt("position");
+            value = b.getString("position");
         TextView text =  (TextView)findViewById(R.id.paramaterausgabe) ;
-        text.setText(String.valueOf(value));
+        text.setText(value);
 
     }
 

@@ -20,6 +20,16 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_result_item" />
+    <include
+        android:id="@+id/include3"
+        layout="@layout/content_result_item" />
+
+    <Button
+        android:id="@+id/favobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zu Favoriten hinzufügen"
+        app:layout_anchor="@+id/include3"
+        app:layout_anchorGravity="bottom|center" />
 
 </android.support.design.widget.CoordinatorLayout>

@@ -164,9 +164,6 @@ public class Search extends AppCompatActivity
     };
     //--------------------------
 
-    //--------------------------handler einrichten:
-    //  callbacks vereinbaren für service binding,
-    // weiterleiten an bindService() für ergebnismitteilung
     private Handler getHandler() {
         final Handler callbackHandler = new Handler() {
             public void handleMessage(Message msg) {
